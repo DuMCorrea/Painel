@@ -1,0 +1,313 @@
+body {
+    display: flex;
+    flex-direction: column; /* Empilhar os containers verticalmente */
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Baloo Bhai';
+    overflow-y: auto; /* Permitir rolagem vertical */
+    margin-top: 20px;
+}
+
+.container {
+    position: relative; 
+    display: flex;
+    width: 1225px;
+    height: 698px;
+    border-radius: 20px;
+    background-color: #010101;
+    margin-bottom: 20px; /* Espaçamento entre os containers */
+}
+
+.close-button {
+    position: absolute; 
+    top: 65px;
+    right: 50px;
+    cursor: pointer; 
+}
+
+.close-icon {
+    width: 30px; 
+    height: 30px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(1, 1, 1, 0.71);
+    border-radius: 20px;
+}
+
+.sidebar {
+    flex: 4;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 35px;
+    margin-left: 50px;
+    font-weight: 1; 
+}
+
+.logo {
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: -10px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px; 
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Baloo Bhai';
+}
+
+.menu-button:hover {
+    color: #FF5400;
+}
+
+.menu-button .icon {
+    width: 20px; 
+    margin-right: 10px;
+    transition: filter 0.3s ease;
+}
+
+.menu-button:hover .icon {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(96%) saturate(2574%) hue-rotate(2deg) brightness(102%) contrast(105%);
+}
+
+.linha {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    align-items: center; 
+    gap: 40px; 
+    margin-top: 25px;
+    margin-left: 50px; 
+}
+
+.card {
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; 
+    height: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.10); 
+}
+
+.card h2 {
+    font-size: 33px; 
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 1;
+}
+
+.card p {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+    flex: 1; 
+    font-weight: 1;
+}
+
+.card-icon {
+    width: 150px;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+
+.seta {
+    width: 60px; 
+}
+
+/* PÁGINA DE CRAFT */
+.cards-container {
+    display: flex; /* Alinha os cards horizontalmente */
+    gap: 40px; /* Espaçamento entre os cards */
+}
+
+/* Estilo geral dos cards */
+.card {
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px; /* Largura dos cards */
+    height: 400px; /* Altura dos cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para os cards ao passar o mouse */
+.card:hover {
+    transform: scale(1.10);
+}
+
+/* Estilo do título do card */
+.card h2 {
+    font-size: 33px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 1;
+}
+
+/* Estilo do parágrafo dentro do card */
+.card p {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+    flex: 1;
+    font-weight: 1;
+}
+
+/* Estilo dos ícones dentro do card */
+.card-icon {
+    width: 150px;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+
+/* Estilo dos cards duplicados na página de craft */
+.container:nth-of-type(2) .cards-container {
+    margin: 0 50px; /* Espaçamento horizontal ao redor do contêiner */
+}
+
+.container:nth-of-type(2) .card {
+    width: 215px; /* Largura dos cards na página de craft */
+    margin-left: 0; /* Remover margem esquerda */
+    margin-right: 0; /* Remover margem direita */
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as colunas */
+    margin-bottom: 120px;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza imagens e cronômetros */
+    gap: 10px; /* Espaçamento entre imagem e cronômetro */
+}
+
+.image-wrapper {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.small-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.icon-timer {
+    width: 10px; /* Tamanho do ícone do cronômetro */
+    height: 10px; /* Tamanho do ícone do cronômetro */
+    margin-right: 0px; /* Espaço entre o ícone e o texto do cronômetro */
+    margin-bottom: 3px;
+}
+
+/* Estilo para o cronômetro */
+.timer {
+    background-color: #2e2e2e; /* Cor de fundo um pouco mais escura */
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    font-size: 14px;
+    display: flex; /* Alinha ícone e texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    gap: 5px; /* Espaçamento entre ícone e texto */
+    margin-top: 10px; /* Espaço entre a imagem e o cronômetro */
+}
+
+/* Evita que o cronômetro mude de lugar quando o card é hoverado */
+.card:hover .timer {
+    transform: none; /* Remove qualquer transformação aplicada ao cronômetro no hover */
+    position: static; /* Garante que a posição do cronômetro permaneça estática */
+}
+
+/* Estilo para os ícones do menu */
+.menu-button .icon {
+    width: 20px; /* Tamanho dos ícones do menu */
+    height: 20px; /* Tamanho dos ícones do menu */
+    margin-right: 10px;
+    transition: filter 0.3s ease;
+}
+
+.menu-button:hover .icon {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(96%) saturate(2574%) hue-rotate(2deg) brightness(102%) contrast(105%);
+}
+
+.large-image {
+    width: 90px; /* Ajuste o tamanho conforme necessário */
+    height: 90px; /* Ajuste o tamanho conforme necessário */
+}
+
+.centered-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ajuste conforme necessário */
+    background-color: #3a3a3a; /* Cor de fundo semelhante à do wrapper original */
+    border-radius: 10px; /* Mesma borda do wrapper original */
+    position: relative; /* Necessário para posicionamento absoluto da imagem */
+}
+
+.centered-image {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: 120px; /* Ajuste o tamanho conforme necessário */
+}
